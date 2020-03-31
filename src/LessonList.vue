@@ -1,12 +1,11 @@
 <template>
-  <div>
-    <h2>LessonList</h2>
-    <LessonItem
-      v-for="(lesson, index) in lessons"
-      :lesson="lesson"
-      :key="index">
-    </LessonItem>
-  </div>
+    <div>
+      <LessonItem
+        v-for="(lesson, index) in lessons"
+        :lesson="lesson"
+        :key="index">
+      </LessonItem>
+    </div>
 </template>
 <script>
 import { mapState, mapActions } from 'vuex'
